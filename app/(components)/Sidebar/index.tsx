@@ -61,7 +61,7 @@ const Sidebar = () => {
           <SidebarLink 
             href="/requestTranscript" 
             icon={ClipboardType} 
-            label="Request Student Transcipts" 
+            label="Request Transcipts" 
             isCollapsed={isSidebarCollapsed}
           />
         <SidebarLink 

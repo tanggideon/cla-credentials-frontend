@@ -25,10 +25,38 @@ const RequestTranscript = () => {
             Recent Requests
           </h1>
           <hr className="h-1 bg-gray-300 my-2" />
-          <RecentCards />
-          <RecentCards />
-          <RecentCards />
-          <RecentCards />
+          <RecentCards 
+            transcriptId="12345"
+            studentName="Felix Frimpong"
+            university="California University"
+            email="felix@email.com"
+            requestedDate="2 days ago"
+            link="/dashboard"
+          />
+          <RecentCards 
+            transcriptId="12345"
+            studentName="Felix Frimpong"
+            university="California University"
+            email="felix@email.com"
+            requestedDate="2 days ago"
+            link="/dashboard"
+          />
+          <RecentCards 
+            transcriptId="12345"
+            studentName="Felix Frimpong"
+            university="California University"
+            email="felix@email.com"
+            requestedDate="2 days ago"
+            link="/dashboard"
+          />
+          <RecentCards 
+            transcriptId="12345"
+            studentName="Felix Frimpong"
+            university="California University"
+            email="felix@email.com"
+            requestedDate="2 days ago"
+            link="/dashboard"
+          />
         </div>
       </div>
     </div>

@@ -3,29 +3,19 @@ import Header from "../(components)/Header";
 import EventCalendar from "../(components)/calendar";
 import Count from "../(components)/Count";
 import RequestCharts from "../(components)/requestCharts";
+import TranscriptCard from "../(components)/completedTranscriptCards";
 
 const Dashboard = () => {
   return (
-    <div>
+    <div >
       <Header name="Dashboard" />
       <div className="py-4 flex flex-col md:flex-row gap-5">
         <div className="w-full lg:w-2/3">
           <div className="flex gap-4 justify-between">
-            <DashboardCards
-              label="Universities"
-              count={24}
-              image="/assets/icons/university.png"
-            />
-            <DashboardCards
-              label="Transcripts"
-              count={120023}
-              image="/assets/icons/file.png"
-            />
-            <DashboardCards
-              label="Daily Requests"
-              count={253}
-              image="/assets/icons/graph-bar.png"
-            />
+          <TranscriptCard name="Alice Johnson" university="Stanford University" dob="19th January, 2001"/>
+          <TranscriptCard name="Kaburi Edward" university="University of Michigan" dob="29th May, 1998"/>
+          <TranscriptCard name="Sophia Maddison" university="Bradford University" dob="19th April, 1999"/>
+          <TranscriptCard name="Sophia Maddison" university="Bradford University" dob="19th April, 1999"/>
           </div>
           <div className="w-full h-[500px] mt-5 rounded-md">
             <RequestCharts />
