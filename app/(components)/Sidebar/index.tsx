@@ -61,26 +61,26 @@ const Sidebar = () => {
           <SidebarLink 
             href="/requestTranscript" 
             icon={ClipboardType} 
-            label="Request Transcipts" 
+            label="Start a Request" 
             isCollapsed={isSidebarCollapsed}
           />
-        <SidebarLink 
+        {/* <SidebarLink 
           href="/sendLink" 
           icon={Send} 
           label="Send Requests Link" 
           isCollapsed={isSidebarCollapsed}
-        />
+        /> */}
        
        <SidebarLink 
          href="/completedTranscripts" 
          icon={FileUser} 
-         label="Completed Transcripts" 
+         label="Completed" 
          isCollapsed={isSidebarCollapsed}
        />
        <SidebarLink 
          href="/pendingTranscripts" 
          icon={FileUser} 
-         label="Pending Transcripts" 
+         label="Pending" 
          isCollapsed={isSidebarCollapsed}
        />
         <SidebarLink 

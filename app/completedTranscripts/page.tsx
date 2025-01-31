@@ -9,7 +9,7 @@ const RequestTranscript = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="w-full h-[80vh]">
-      <Header name="Completed Transcripts" />
+      <Header name="Completed Requests" />
       <div className="py-4 flex flex-col md:flex-row gap-5 p-10 bg-white h-full mt-5">
         <div className="w-full lg:w-2/3 bg-white h-full overflow-y-scroll flex flex-col gap-3">
           <TranscriptCard name="Alice Johnson" university="Stanford University" dob="19th January, 2001"/>

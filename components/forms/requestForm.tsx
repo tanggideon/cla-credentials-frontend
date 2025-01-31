@@ -72,7 +72,7 @@ const RequestForm = () => {
             inputType={FormFieldType.INPUT}
             control={form.control}
             name="id"
-            label="Student ID Number"
+            label="Student ID / Index Number"
             placeholder="ID Number"
           />
           <CustomFormField
@@ -93,9 +93,16 @@ const RequestForm = () => {
             inputType={FormFieldType.DATE_PICKER}
             control={form.control}
             name="gradDate"
-            label="Graduation Date"
+            label="Graduation Year"
+          />
+          <CustomFormField
+            inputType={FormFieldType.DATE_PICKER}
+            control={form.control}
+            name="gradDate"
+            label="Examination Year "
           />
           <SubmitButton isLoading={isLoading}>Send Request</SubmitButton>
+          <SubmitButton isLoading={isLoading}>Request for Another Student</SubmitButton>
         </form>
       </FormProvider>
     </div>

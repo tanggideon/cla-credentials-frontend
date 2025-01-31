@@ -4,7 +4,6 @@ import Link from "next/link";
 import { BookA, Landmark } from "lucide-react";
 import CoursesCard from "../(components)/coursesCard";
 import { Button } from "../../components/ui/button";
-import { usePathname } from "next/navigation";
 
 const courses = [
   {
@@ -35,7 +34,6 @@ const courses = [
 ];
 
 const TranscriptDetails = () => {
-
 
   return (
     <div className="w-full h-[80vh]">
@@ -77,18 +75,18 @@ const TranscriptDetails = () => {
           <div className="w-full lg:w-4/5 bg-white h-full p-5 flex flex-col gap-3">
             <div>
               <h1 className="text-lg font-semibold text-gray-500">
-                Credential Page for Student
+                Instructions to Universities
               </h1>
-              <h1 className="text-md font-semibold text-gray-500">
+              {/* <h1 className="text-md font-semibold text-gray-500">
                 Courses and Grades
-              </h1>
+              </h1> */}
             </div>
-            <hr className="h-1 bg-gray-300 my-2" />
+            {/* <hr className="h-1 bg-gray-300 my-2" />
             <div>
               {courses.map((item) => (
                 <CoursesCard courseName={item.course} grade={item.grade} key={item.id}/>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
